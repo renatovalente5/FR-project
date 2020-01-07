@@ -1,6 +1,6 @@
 # Fundamentos_de_Redes
 
-![alt text](Projeto.png "Imagem ilustrativa do projeto no GNS3")
+![alt text](img_Projeto.png "Imagem ilustrativa do projeto no GNS3")
 
 Construction of a corporate communication network
 
