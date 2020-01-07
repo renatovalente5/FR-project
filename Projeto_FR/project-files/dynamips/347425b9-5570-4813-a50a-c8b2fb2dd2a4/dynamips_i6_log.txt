@@ -1,0 +1,48 @@
+Dec 02 11:10:28.638 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 02 11:10:28.638 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46061.
+Dec 02 11:10:28.648 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 02 11:10:28.648 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto_FR/Projeto_FR/project-files/dynamips 
+Dec 02 11:10:28.648 GENERAL: working_dir=/home/rita/Desktop/Projeto_FR/Projeto_FR/project-files/dynamips
+Dec 02 11:10:28.649 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rita/Desktop/Projeto_FR/Projeto_FR/project-files/dynamips/1c8415bf-9c35-483c-a02d-ba177c54043f 
+Dec 02 11:10:28.649 GENERAL: working_dir=/home/rita/Desktop/Projeto_FR/Projeto_FR/project-files/dynamips/1c8415bf-9c35-483c-a02d-ba177c54043f
+Dec 02 11:10:28.649 HYPERVISOR: exec_cmd: vm create SWL3F1 2 c3725 
+Dec 02 11:10:28.649 VM: VM SWL3F1 created.
+Dec 02 11:10:28.649 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3F1 5005 
+Dec 02 11:10:28.649 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3F1 
+Dec 02 11:10:28.649 HYPERVISOR: exec_cmd: vm set_disk0 SWL3F1 1 
+Dec 02 11:10:28.650 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:10:28.650 HYPERVISOR: exec_cmd: vm set_idle_pc SWL3F1 0x60a6a1e0 
+Dec 02 11:10:28.650 HYPERVISOR: exec_cmd: vm set_ios SWL3F1 /home/rita/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21 (2).image 
+Dec 02 11:10:28.650 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3F1 c202.0e49.0000 
+Dec 02 11:10:28.650 HYPERVISOR: exec_cmd: vm set_nvram SWL3F1 256 
+Dec 02 11:10:28.651 HYPERVISOR: exec_cmd: vm set_ram SWL3F1 256 
+Dec 02 11:10:28.651 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:10:28.651 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3F1 1 0 NM-16ESW 
+Dec 02 11:10:30.999 HYPERVISOR: exec_cmd: nio create_udp udp-1abd00e2-a049-4057-a16f-c54036700d9b 10064 127.0.0.1 10065 
+Dec 02 11:10:31.212 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 0 udp-1abd00e2-a049-4057-a16f-c54036700d9b 
+Dec 02 11:10:31.213 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:10:31.412 HYPERVISOR: exec_cmd: nio create_udp udp-abceed3a-54da-466d-96e2-ffd011605830 10076 127.0.0.1 10077 
+Dec 02 11:10:31.413 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 1 udp-abceed3a-54da-466d-96e2-ffd011605830 
+Dec 02 11:10:31.413 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:10:31.446 HYPERVISOR: exec_cmd: nio create_udp udp-47d2c167-0b6e-40f0-9856-4969f9c336bc 10080 127.0.0.1 10081 
+Dec 02 11:10:31.447 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 2 udp-47d2c167-0b6e-40f0-9856-4969f9c336bc 
+Dec 02 11:10:31.447 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:10:31.547 HYPERVISOR: exec_cmd: nio create_udp udp-a0239271-769f-477a-a8d1-447c3d15688a 10092 127.0.0.1 10093 
+Dec 02 11:10:31.547 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3F1 1 3 udp-a0239271-769f-477a-a8d1-447c3d15688a 
+Dec 02 11:10:31.548 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:14:27.039 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Dec 02 11:14:27.039 VM: VM Ghost created.
+Dec 02 11:14:27.040 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/rita/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21 (2).image 
+Dec 02 11:14:27.040 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 02 11:14:27.041 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/home/rita/Desktop/Projeto_FR/Projeto_FR/project-files/dynamips/c3725-advipservicesk9-mz.124-21 (2).image-256.ghost' 
+Dec 02 11:14:27.041 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 11:14:27.051 HYPERVISOR: exec_cmd: vm set_config SWL3F1 configs/i2_startup-config.cfg 
+Dec 02 11:14:27.054 HYPERVISOR: exec_cmd: vm start SWL3F1 
+Dec 02 12:40:28.235 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
+Dec 02 12:40:28.247 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
+Dec 02 12:41:28.244 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
+Dec 02 12:41:28.258 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
+Dec 02 12:58:31.173 HYPERVISOR: exec_cmd: vm get_status SWL3F1 
+Dec 02 12:58:31.175 HYPERVISOR: exec_cmd: vm stop SWL3F1 
+Dec 02 12:58:31.409 VM: VM SWL3F1 shutdown.
+Dec 02 12:58:31.410 HYPERVISOR: exec_cmd: vm extract_config SWL3F1 
